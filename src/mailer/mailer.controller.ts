@@ -6,8 +6,8 @@ import { SendMessageDto } from './dto/sendMessage.dto';
 export class MailerController {
   constructor(private readonly mailerService: MailerService) {}
 
-  @Post()
-  sendMessage(@Body() createBuyerDto: SendMessageDto) {
-    return this.mailerService.sendMessage(createBuyerDto);
+  @Post('send')
+  sendMessage(@Body() sendMessageDto: SendMessageDto) {
+    return this.mailerService.sendMessage(sendMessageDto);
   }
 }

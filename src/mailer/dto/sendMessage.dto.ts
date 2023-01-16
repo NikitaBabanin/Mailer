@@ -1,7 +1,7 @@
 export class SendMessageDto {
-  name: string;
-  phone: string;
-  email: string;
+  userName: string;
+  userEmail: string;
+  userPhone: string;
   subject: string;
   message: string;
 }
